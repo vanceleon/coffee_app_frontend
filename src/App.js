@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       The Barista App for Home Baristas
-
+      
     </div>
   );
 }
