@@ -1,4 +1,10 @@
 import React from 'react';
-import {Route, Redirect} from 'react-router-dom';
 
-
+export default function LandingPage() {
+  return (
+    <div className='landing-page'>
+      <button>Log In</button>
+      <button>Sign In</button>
+    </div>
+  )
+}
