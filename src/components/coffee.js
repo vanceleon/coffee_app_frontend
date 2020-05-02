@@ -15,4 +15,3 @@ export default function CoffeeType() {
     </div>
   )
 }
-console.log("testing")
