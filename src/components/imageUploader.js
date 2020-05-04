@@ -4,11 +4,11 @@
 import React, {useState} from 'react';
 
 
-export default function CoffeeType() {
-  const [coffee, setcoffee] = useState(initialState)
+export default function ImageUploader() {
+  const [coffee, setcoffee] = useState(0)
   return(
     <div>
-      <input type="text" placeholder='input coffee here'/>
+      <div>Drop File Here</div>
       <div className="submit">Submit</div>
     </div>
   )

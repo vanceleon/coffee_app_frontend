@@ -1,6 +1,7 @@
 import React from 'react';
 import CoffeeLandingImg from '../images/coffeeBackground.jpg'
 
+
 export default function LandingPage() {
   return (
     <div className='landing-page'>
