@@ -4,7 +4,7 @@
 // get request on proper setting for brew 
 
 import React, {useState} from 'react';
-import ImageUploader from './imageUploader';
+import ImageUploader from '../imageUploader';
 import CoffeeRatings from './coffeeRatings';
 
 

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import CoffeeMeasurements from './measurements';
-import ImageUploader from './imageUploader';
-import Rating from './coffeeRatings';
+import CoffeeMeasurements from '../measurements';
+import ImageUploader from '../imageUploader';
+import BrewRatings from './brewRatings';
 
 
 export default function NewBrewForm() {
@@ -10,7 +10,7 @@ export default function NewBrewForm() {
     <form className='newBrew'>
       <input type="text" placeholder='input coffee here'/>
       <CoffeeMeasurements/>
-      <Rating/>
+      <BrewRatings/>
       <ImageUploader/>
       <input type='text' placeholder='notes' />
       <div className="submit">Submit</div>
