@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 
-export default function Ratings() {
+export default function CoffeeRatings() {
   const [coffee, setcoffee] = useState(0)
   return(
     <div>

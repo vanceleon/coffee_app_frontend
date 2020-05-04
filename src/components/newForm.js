@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import CoffeeMeasurements from './measurements';
 import ImageUploader from './imageUploader';
-import Rating from './ratings';
+import Rating from './coffeeRatings';
 
 
 export default function NewBrewForm() {
   const [coffee, setcoffee] = useState(0)
   return(
-    <form className='newBrew' width='500px'>
+    <form className='newBrew'>
       <input type="text" placeholder='input coffee here'/>
       <CoffeeMeasurements/>
       <Rating/>
