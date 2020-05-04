@@ -8,16 +8,16 @@ import ImageUploader from './imageUploader';
 import CoffeeRatings from './coffeeRatings';
 
 
-export default function CoffeeType() {
+export default function CoffeeTypeForm() {
   const [coffee, setcoffee] = useState(0)
   return(
-    <div>
+    <form>
       <ImageUploader/>
       <input type="text" placeholder='Coffee Brand'/>
       <input type="text" placeholder='Coffee Roast'/>
       <CoffeeRatings/>
       <input type="text" placeholder='notes'/>
       <div className="submit">Submit</div>
-    </div>
+    </form>
   )
 }
