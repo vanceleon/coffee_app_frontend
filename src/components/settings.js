@@ -7,7 +7,10 @@ export default function Settings() {
   const [coffee, setcoffee] = useState(0)
   return(
     <div>
-      <input type="text" placeholder='input coffee here'/>
+      <span>Email</span>
+      <span>password</span>
+      <span>password</span>
+      <span>Payment</span>
       <div className="submit">Submit</div>
     </div>
   )
