@@ -20,7 +20,7 @@ export default function CoffeeList() {
   return (
       <div>
         {listOfCoffee.map(coffeeItem => {
-          return <div>{coffeeItem.coffeeRoast}</div>
+          return <div className='coffeeCard'>{coffeeItem.coffeeRoast}</div>
         })}
       </div>
     )

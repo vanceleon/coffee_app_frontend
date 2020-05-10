@@ -20,7 +20,7 @@ export default function BrewList() {
     <div>
       {listOfBrews.map(brewItem => {
         return (
-          <div>
+          <div className='brewCard'>
             <div>{brewItem.timing}</div>
             <div>{brewItem.milkTemp}</div>
             <div>{brewItem.waterTemp}</div>
