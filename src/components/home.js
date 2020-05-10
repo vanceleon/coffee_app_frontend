@@ -3,6 +3,7 @@
 
 import React, {useState} from 'react';
 import CoffeeList from '../components/coffee/coffeeList';
+import BrewList from './brew/brewList';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <span>Coffee List</span>
       <CoffeeList/>
       <span>Brew List</span>
+      <BrewList/>
     </div>
   )
 }

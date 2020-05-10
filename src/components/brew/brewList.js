@@ -2,23 +2,31 @@ import React, { useState } from 'react';
 
 const listOfBrews = [
   {
-    
-    rating: 5,
+    timing: 19, // in seconds
+    weight: 10, // in grams
+    waterTemp: 130, // F
+    milkTemp: 100, // F
   },
   {
-    coffeeRoast: 'Dark',
-    coffeeBrand: 'Grumpy Coffee',
-    coffeeNotes: 'Prefer the medium roast',
-    rating: 3,
+    timing: 19, // in seconds
+    weight: 10, // in grams
+    waterTemp: 115, // F
+    milkTemp: 90, // F
   },
 ];
 
-export default function CoffeeList() {
+export default function BrewList() {
   return (
-      <div>
-        {listOfCoffee.map(coffeeItem => {
-          return <div>{coffeeItem.coffeeRoast}</div>
-        })}
-      </div>
-    )
+    <div>
+      {listOfBrews.map(brewItem => {
+        return (
+          <div>
+            <div>{brewItem.timing}</div>
+            <div>{brewItem.milkTemp}</div>
+            <div>{brewItem.waterTemp}</div>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
