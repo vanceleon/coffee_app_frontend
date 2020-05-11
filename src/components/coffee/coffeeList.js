@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Divider } from 'semantic-ui-react';
-
+import NewCoffeeForm from './coffeeForm';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 const listOfCoffee = [
   {
     coffeeRoast: 'Medium',
@@ -18,10 +18,19 @@ const listOfCoffee = [
 
 export default function CoffeeList() {
   return (
-      <div>
-        {listOfCoffee.map(coffeeItem => {
-          return <div className='coffeeCard'>{coffeeItem.coffeeRoast}</div>
-        })}
-      </div>
-    )
+    <Router>
+      <Route path='/coffee'>
+        <NewCoffeeForm />
+      </Route>
+      {listOfCoffee.map(coffeeItem => {
+        return (
+          <div className='coffeeListContainer'>
+            <div className='coffeeCard'>{coffeeItem.coffeeRoast}</div>
+            <div className='coffeeCard'>{coffeeItem.coffeeBrand}</div>
+            <div className='coffeeCard'>{coffeeItem.coffeeNotes}</div>
+          </div>
+        );
+      })}
+    </Router>
+  );
 }
