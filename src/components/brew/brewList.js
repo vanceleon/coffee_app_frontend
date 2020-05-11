@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import NewBrewForm from './brewForm';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 const listOfBrews = [
   {
@@ -17,16 +19,21 @@ const listOfBrews = [
 
 export default function BrewList() {
   return (
-    <div>
+    <Router>
+      <Route path='/newbrew'>
+        <NewBrewForm />
+      </Route>
       {listOfBrews.map(brewItem => {
         return (
+          // <div className='brewContainer'>
           <div className='brewCard'>
             <div>{brewItem.timing}</div>
             <div>{brewItem.milkTemp}</div>
             <div>{brewItem.waterTemp}</div>
           </div>
+          // </div>
         );
       })}
-    </div>
+    </Router>
   );
 }

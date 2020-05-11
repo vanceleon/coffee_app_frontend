@@ -24,7 +24,7 @@ export default function CoffeeList() {
       </Route>
       {listOfCoffee.map(coffeeItem => {
         return (
-          <div className='coffeeListContainer'>
+          <div className='coffeeCardContainer'>
             <div className='coffeeCard'>{coffeeItem.coffeeRoast}</div>
             <div className='coffeeCard'>{coffeeItem.coffeeBrand}</div>
             <div className='coffeeCard'>{coffeeItem.coffeeNotes}</div>

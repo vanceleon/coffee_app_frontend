@@ -8,7 +8,7 @@ import ImageUploader from '../imageUploader';
 import CoffeeRatings from './coffeeRatings';
 
 
-export default function CoffeeTypeForm() {
+export default function NewCoffeeForm() {
   const [coffee, setcoffee] = useState(0)
   return(
     <form>
