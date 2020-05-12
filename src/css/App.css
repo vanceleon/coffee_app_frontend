@@ -129,7 +129,8 @@ table {
 }
 
 .App {
-  text-align: center;
+	text-align: center;
+	font-size: 30px;
 }
 
 .App-logo {
@@ -149,6 +150,11 @@ table {
 
 .App-link {
   color: #09d3ac;
+}
+
+.homeContainer{
+	width: 1500px;
+	margin: 0 auto;
 }
 
 /* Below is separate files */

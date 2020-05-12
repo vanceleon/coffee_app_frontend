@@ -20,13 +20,13 @@ const listOfBrews = [
 export default function BrewList() {
   return (
     <Router>
-      <Route path='/newbrew'>
+      <Route path='/home/newbrew'>
         <NewBrewForm />
       </Route>
       {listOfBrews.map(brewItem => {
         return (
           // <div className='brewContainer'>
-          <div className='brewCard'>
+          <div className='brewCardContainer'>
             <div>{brewItem.timing}</div>
             <div>{brewItem.milkTemp}</div>
             <div>{brewItem.waterTemp}</div>

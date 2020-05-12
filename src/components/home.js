@@ -7,7 +7,7 @@ import BrewList from './brew/brewList';
 
 export default function Home() {
   return (
-    <div className='container'>
+    <div className='homeContainer'>
       <span>Coffee List</span>
       <CoffeeList/>
       <span>Brew List</span>
