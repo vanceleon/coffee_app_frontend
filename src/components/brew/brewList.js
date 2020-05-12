@@ -19,14 +19,12 @@ const listOfBrews = [
 
 export default function BrewList() {
   return (
-    <Router>
-      <Route path='/home/newbrew'>
-        <NewBrewForm />
-      </Route>
+    <React.Fragment>
       {listOfBrews.map(brewItem => {
         return (
           // <div className='brewContainer'>
           <div className='brewCardContainer'>
+            <h1>Brew Item</h1>
             <div>{brewItem.timing}</div>
             <div>{brewItem.milkTemp}</div>
             <div>{brewItem.waterTemp}</div>
@@ -34,6 +32,6 @@ export default function BrewList() {
           // </div>
         );
       })}
-    </Router>
+    </React.Fragment>
   );
 }
