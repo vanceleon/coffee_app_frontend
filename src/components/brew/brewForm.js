@@ -5,6 +5,9 @@ import BrewRatings from './brewRatings';
 
 export default function NewBrewForm() {
   const [coffee, setcoffee] = useState(0);
+  // const [draggning, setcoffee] = useState(0);
+
+  
   return (
     <form className='newBrew'>
       <input type='text' placeholder='input coffee here' />

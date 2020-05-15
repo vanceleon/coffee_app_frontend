@@ -4,9 +4,9 @@ import CoffeeLandingImg from '../images/coffeeBackground.jpg'
 
 export default function LandingPage() {
   return (
-    <div className='landing-page'>
+    <div className='landingPage'>
       <h1>Home Barista</h1>
-      <img src={CoffeeLandingImg} alt="latte" height='1280px' width='100%'/>
+      <img className='landingImg' src={CoffeeLandingImg} alt="latte"/>
       <div>Log In</div>
       <div>Sign In</div>
     </div>
