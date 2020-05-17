@@ -9,6 +9,7 @@ export default function LandingPage() {
       <img className='landingImg' src={CoffeeLandingImg} alt="latte"/>
       <div>Log In</div>
       <div>Sign In</div>
+      <div>Sign Up</div>
     </div>
   )
 }
