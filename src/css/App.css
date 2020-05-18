@@ -168,6 +168,11 @@ table {
 	margin: 0 auto;
 }
 
+.navigationContainer{
+  border: 1px solid blue;
+  
+}
+
 /* Below is separate files */
 
 @import './brew.css';
