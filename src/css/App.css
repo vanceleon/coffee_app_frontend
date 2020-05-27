@@ -130,7 +130,8 @@ table {
 
 .App {
 	text-align: center;
-	font-size: 30px;
+  font-size: 30px;
+  display: flex;
 }
 
 .App-logo {
@@ -170,7 +171,7 @@ table {
 
 .navigationContainer{
   border: 1px solid blue;
-  
+  width: 400px;
 }
 
 /* Below is separate files */
