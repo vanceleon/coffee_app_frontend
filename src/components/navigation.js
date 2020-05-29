@@ -12,14 +12,4 @@ export default function Navigation() {
       <div>Settings</div>
     </div>
   );
-  // // } else {
-  //   return (
-  //     <div className='navigationContainer'>
-  //       <div>Log In</div>
-  //       <div>Sign In</div>
-  //       <div>Sign Up</div>
-  //     </div>
-  //   );
-}
-// }
-// }
+  }
