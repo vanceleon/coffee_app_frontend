@@ -4,6 +4,11 @@ import CoffeeLandingImg from '../images/coffeeBackground.jpg'
 
 export default function LandingPage() {
   //need to change the img tag to a div tag and set the background to the image
+  isLoggedIn(signedIn) {
+    if(signedIn) {
+      return true;
+    }
+  }
   return (
     <div className='landingPage'>
       <h1>Home Barista</h1>
