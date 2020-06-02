@@ -10,6 +10,7 @@ export default function Navigation() {
       <div>List of Coffee</div>
       <div>List of Brews</div>
       <div>Settings</div>
+      <div>Settings</div>
     </div>
   );
   }
